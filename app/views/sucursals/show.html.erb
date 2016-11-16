@@ -1,0 +1,20 @@
+<div class="page-header">
+  <%= link_to sucursals_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_sucursal_path(@sucursal), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show sucursal</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Nombre:</dt>
+  <dd><%= @sucursal.nombre %></dd>
+
+  <dt>Direccion:</dt>
+  <dd><%= @sucursal.direccion %></dd>
+
+</dl>
